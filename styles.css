@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+body{
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    margin: 15vw 0;
+}
+.component{
+    width: 50rem;
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    box-shadow: 0 8px 8px hsla(217, 19%, 35%, 0.06),
+                0 16px 16px hsla(217, 19%, 35%, 0.06),
+                0 32px 32px hsla(217, 19%, 35%, 0.06),
+                0 64px 64px hsla(217, 19%, 35%, 0.06);
+}
+.picture{
+    width: 25rem;
+    border-radius: 10px 0 0 10px;
+}
+.content{
+    width: 25rem;
+    padding: 2.5rem;
+    background-color: white;
+    margin-left: -5rem;
+    border-radius: 0 10px 10px 0;
+}
+.heading{
+    color: hsl(217, 19%, 35%);
+    font-size: 1.6em;
+    font-weight: 700;
+}
+.description{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: hsl(212, 23%, 69%);
+}
+.details{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.personal-details{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1em;
+}
+.profile-photo{
+    width: 4vw;
+    border-radius: 50%;
+}
+.name{
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+    margin: 0;
+}
+.date{
+    font-weight: 500;
+    margin: 0;
+    color: hsl(212, 23%, 69%);
+}
+.share{
+    background-color: hsl(210, 46%, 95%);
+    width: 15px;
+    height: 15px;
+    padding: 8px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.share:hover{
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+.share-bubble{
+    display: none;
+    position: absolute;
+    top: -3rem;
+    right: -4.75rem;
+}
+.active{
+    display: block;
+}
+.social-media{
+    width: 9rem;
+    height: 2.5rem;
+    display: grid;
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(212, 23%, 69%);
+    border-radius: 5px;
+    z-index: 2;
+}
+.share-text{
+    font-size: 0.75em;
+    letter-spacing: 3px;
+    margin: 0;
+}
+.icons{
+    color: white;
+    font-size: 1.25em;
+    margin: 0;
+    cursor: pointer;
+}
+.icons:hover{
+    color: hsl(212, 23%, 69%);
+}
+.pointer{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 2px;
+    transform: rotate(45deg);
+    bottom: -0.5rem;
+    left: 4.75rem;
+}
